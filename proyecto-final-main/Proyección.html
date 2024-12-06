@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Proyección</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <img src="geotermica28.jpg" alt="Energía Geotérmica" style="width:70%; max-width:500px; border:4px solid rgb(14, 30, 101);">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Proyecto<br>TalentoTech2</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="Proyecto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyecto</a> 
+    <a href="Estadisticas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Estadisticas</a> 
+    <a href="Grafico1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Producción Energetica</a> 
+    <a href="Grafico2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Capacidad Instalada</a> 
+    <a href="Grafico3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Participación</a>
+    <a href="Riesgosybeneficios.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Riesgos y beneficios</a> 
+    <a href="Proyección.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyección</a>
+    <a href="Calculadora.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Calculadora</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Proyección en Colombia</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Geotermia.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(126, 221, 19)" class="w3-round">
+  </div>
+
+  <img src="geotermica29.jpg" alt="Energía Geotérmica" style="width:60%; max-width:400px; border:2px solid rgb(73, 36, 205);">
+  
+  <!-- Photo grid (modal) -->
+  
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Capacidad Geotérmica -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Capacidad Geotérmica.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(126, 203, 19)" class="w3-round">
+    <p>La proyección de la energía geotérmica en Colombia es que podría generar alrededor de 1.200 megavatios (MW) de electricidad, lo que equivaldría al 5% de la generación nacional.</p>
+  </div>
+  
+<!-- Comparativa Energética -->
+<div class="w3-container" id="designers" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-red"><b>Comparativa Energética.</b></h1>
+  <hr style="width:50px;border:5px solid rgb(126, 224, 35)" class="w3-round">
+  <p>En Colombia, aproximadamente el 70% de la energía eléctrica proviene de fuentes hidroeléctricas, con una capacidad instalada total cercana a los 11.834 MW. Esto incluye grandes centrales como Hidroituango (1.200 MW), San Carlos (1.240 MW), y Guavio (1.250 MW).</p>
+  <p>Anualmente, la generación hidroeléctrica puede variar según el régimen hidrológico. Para 2023, se estimó una generación promedio mensual de unos 5.800-6.000 GWh, dependiendo de las condiciones climáticas.</p>
+  <p><b>Energía geotérmica</b></p>
+  <p>Actualmente, no hay generación geotérmica comercial en el país. Sin embargo, existen proyectos piloto en exploración.</p>
+  <p>Pero en Colombia se está desarrollando diversos proyectos de energía geotérmica, aunque el sector aún está en sus etapas iniciales. Algunos de los principales proyectos y avances son:</p>
+  <ul>
+    <li>Proyecto en Caldas: con una proyección de 30MW anuales.</li>
+    <li>Campo Maracas en Casanare: con una proyección de 100kW.</li>
+    <li>Proyecto Chichimene: con una proyección de 2MW.</li>
+  </ul>
+
+  <!-- Nueva información añadida -->
+  <h2>Proyección de energía geotérmica y comparativa con la hidroeléctrica</h2>
+  <h3>Proyección de producción geotérmica:</h3>
+  <ul>
+    <li>A 15 años: 303,040 MWh.</li>
+    <li>A 30 años: 326,581 MWh.</li>
+    <li>A 50 años: 360,838 MWh.</li>
+  </ul>
+
+  <h3>Comparativa porcentual con la producción hidroeléctrica:</h3>
+  <ul>
+    <li>A 15 años: La energía geotérmica representaría el 0.42% de la producción hidroeléctrica.</li>
+    <li>A 30 años: La energía geotérmica representaría el 0.45%.</li>
+    <li>A 50 años: La energía geotérmica representaría el 0.50%.</li>
+  </ul>
+  <p>A pesar del crecimiento anual del 0.5%, la geotermia sigue siendo una fracción menor en comparación con la capacidad hidroeléctrica del país.</p>
+</div>

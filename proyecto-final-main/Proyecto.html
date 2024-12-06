@@ -1,0 +1,145 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Proyecto</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <img src="geotermica28.jpg" alt="Energía Geotérmica" style="width:70%; max-width:500px; border:4px solid rgb(14, 30, 101);">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Proyecto<br>TalentoTech2</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="Proyecto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyecto</a> 
+    <a href="Estadisticas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Estadisticas</a> 
+    <a href="Grafico1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Producción Energetica</a> 
+    <a href="Grafico2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Capacidad Instalada</a> 
+    <a href="Grafico3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Participación</a>
+    <a href="Riesgosybeneficios.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Riesgos y beneficios</a> 
+    <a href="Proyección.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyección</a>
+    <a href="Calculadora.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Calculadora</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Proyecto de energía geotérmica.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b></b></h1>
+   
+  </div>
+  <img src="Geotermica8-jpg.webp" alt="Energía Geotérmica" style="width:80%; max-width:700px; border:2px solid rgb(33, 27, 116);">
+  <img src="geotermica7.jpeg" alt="Energía Geotérmica" style="width:75%; max-width:700px; border:2px solid rgb(38, 21, 165);">
+  <!-- Photo grid (modal) -->
+  
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <div> <h1><b>Definicion de energía geotérmica.</b></h1>
+    <hr style="width:70px;border:5px solid rgb(15, 65, 95)" class="w3-round">
+    <h3>La energía geotérmica es una forma de energía renovable que se obtiene del calor almacenado en el interior de la Tierra. Este calor proviene principalmente del núcleo terrestre y del decaimiento radiactivo de minerales en el manto. La energía geotérmica se manifiesta en forma de aguas termales, géiseres, volcanes y fuentes de vapor, pero también puede ser extraída a través de perforaciones para aprovechar las altas temperaturas del subsuelo.</h3>
+    
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+  </div> <h1> <b>Como se obtiene la energía renovable.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(15, 82, 118)" class="w3-round">
+    <h3>Para aprovechar la energía geotérmica, se utilizan sistemas especializados que incluyen:<br></h3>
+     <h3> 1.	Sistemas de alta temperatura: Usados en centrales eléctricas, donde el vapor generado a partir de depósitos subterráneos impulsa turbinas que producen electricidad.<br></h3>
+      <h3>2.	Sistemas de temperatura moderada: Utilizados para calefacción y refrigeración en edificaciones.<br></h3>
+    <h3>  3.	Bombas de calor geotérmicas: Aprovechan las temperaturas constantes del subsuelo para aplicaciones residenciales o comerciales.<br></h3>
+      </p>
+    
+    <p><b></b>:</p>
+  </div>
+  <img src="geotermica17.jpg" alt="Energía Geotérmica" style="width:75%; max-width:700px; border:2px solid rgb(41, 7, 86);">
+  <img src="geotermica18.jpg" alt="Energía Geotérmica" style="width:75%; max-width:700px; border:2px solid rgb(41, 14, 86);">
+
+  
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Importancia de la energía geotérmica.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(15, 86, 114)" class="w3-round">
+    <p><h3>La energía geotérmica tiene un papel crucial en la transición hacia fuentes de energía más sostenibles y menos contaminantes. Su importancia radica en varios aspectos fundamentales:<br></h3>
+  <h3> 1.	Energía Renovable y Sostenible:<br>
+  <h3>    La energía geotérmica es prácticamente inagotable a escala humana. Mientras el núcleo de la Tierra continúe generando calor, esta fuente de energía seguirá siendo accesible a diferencia de los combustibles fósiles.<br>
+   <h3>   2.	Reducción de Emisiones de Gases de Efecto Invernadero:<br>
+   <h3>   La generación de energía geotérmica emite significativamente menos dióxido de carbono (CO₂) y otros gases contaminantes en comparación con las plantas que usan combustibles fósiles.<br>
+    <h3>  3.	Eficiencia Energética:<br>
+La energía geotérmica es una de las fuentes más eficientes, ya que puede operar las 24 horas del día, los 365 días del año. A diferencia de la solar o la eólica, no depende de condiciones climáticas o de luz solar.<br>
+4.	Conservación de Recursos Naturales:<br>
+A diferencia de otras tecnologías que requieren grandes cantidades de agua, la energía geotérmica utiliza sistemas cerrados que recirculan el agua en el subsuelo, reduciendo el impacto ambiental y el consumo de recursos hídricos.<br>
+
+      </p>
+  </div>
+
+ 
+  
+  
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+      <body>

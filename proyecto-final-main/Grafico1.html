@@ -1,0 +1,130 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+<title><Grafico-de-Barras></Grafico-de-Barras></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <img src="geotermica28.jpg" alt="Energía Geotérmica" style="width:70%; max-width:500px; border:4px solid rgb(14, 30, 101);">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Proyecto<br>TalentoTech2</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="Proyecto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyecto</a> 
+    <a href="Estadisticas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Estadisticas</a> 
+    <a href="Grafico1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Producción Energetica</a> 
+    <a href="Grafico2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Capacidad Instalada</a> 
+    <a href="Grafico3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Participación</a>
+    <a href="Riesgosybeneficios.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Riesgos y beneficios</a> 
+    <a href="Proyección.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyección</a>
+    <a href="Calculadora.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Calculadora</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Produccion de energia renovable por fuente</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Grafico Japon 2020</b></h1>
+    <hr style="width:50px;border:5px solid rgb(79, 192, 98)" class="w3-round">
+  </div>
+  
+ 
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+    
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'JPN'],
+          ['Hydropower Consumption', 78.81],
+          ['Wind Generation', 8.48],
+          ['Solar Energy Consumption', 79.09],
+          ['Installed Geothermal', 525]
+        ]);
+    
+        var options = {
+          chart: {
+            title: 'Consumo de Energía en Japón',
+            subtitle: 'Fuentes de energía renovable',
+          },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          colors: ['#1b9e77', '#d95f02', '#7570b3', '#e7298a'], // Cambiar colores
+          width: 800, // Reducir el tamaño
+          height: 400, // Reducir el tamaño
+          animation: {
+            startup: true,
+            duration: 1000,
+            easing: 'out', // Agregar animación
+          },
+          hAxis: {
+            title:'Producción',
+            minValue: 0
+          },
+          vAxis: {
+            title: 'Tipo de Energía'
+          }
+        };
+    
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+    
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    
+    <!-- Este es el div donde se mostrará el gráfico -->
+    <div id="barchart_material"></div>
+    
+    <h1>Produccion de energia renovable por fuente</h1> 
+
+    <h3><i> Este gráfico nos enseña la producción por fuente de energía en el país de Japón durante el año 2020, evidenciandose la utilidad de la implementación de la energía geotérmica. Tomado de Kaggle (Hydropower Consumption, wind generation, solar energy consumption, biofuel production e Installed geothermal)</i></h3>
+  <body>
+
+  </body>
+</html>
+
+<img src="geotermica27.jpg" alt="Energía Geotérmica" style="width:70%; max-width:500px; border:2px solid red;">
+ 
+</script>
+
+</body>
+</html>
+      <body>

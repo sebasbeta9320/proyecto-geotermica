@@ -1,0 +1,205 @@
+
+</html>
+
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+<title>caculadora</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <img src="geotermica28.jpg" alt="Energía Geotérmica" style="width:70%; max-width:500px; border:4px solid rgb(14, 30, 101);">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Proyecto<br>TalentoTech2</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="Proyecto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyecto</a> 
+    <a href="Estadisticas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Estadisticas</a> 
+    <a href="Grafico1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Producción Energetica</a> 
+    <a href="Grafico2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Capacidad Instalada</a> 
+    <a href="Grafico3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Participación</a>
+    <a href="Riesgosybeneficios.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Riesgos y beneficios</a> 
+    <a href="Proyección.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyección</a>
+    <a href="Calculadora.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Calculadora</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Grafico de Pie</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Datos Japon 2020.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <html>
+  <head>
+    <h1>Calculadora de Energía</h1>
+    <form>
+        <label for="consumo">Consumo eléctrico del hogar (kWh):</label>
+        <input type="number" id="consumo" name="consumo" onchange="calcularPorcentajes()">
+    </form>
+
+    <table border="1" style="margin-top: 20px;background-color: rgb(158, 129, 158);">
+        <thead>
+            <tr>
+                <th>Fuente de Energía</th>
+                <th>Porcentaje</th>
+                <th>Consumo en kWh</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Energía Geotérmica</td>
+                <td>32.03%</td>
+                <td id="geotermica">0</td>
+            </tr>
+            <tr>
+                <td>Energía Solar</td>
+                <td>0.00000036%</td>
+                <td id="solar">0</td>
+            </tr>
+            <tr>
+                <td>Energía Eólica</td>
+                <td>0.00000007%</td>
+                <td id="eolica">0</td>
+            </tr>
+            <tr>
+                <td>Energía Hidráulica</td>
+                <td>67.96%</td>
+                <td id="hidraulica">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function calcularPorcentajes() {
+            const consumo = parseFloat(document.getElementById('consumo').value) || 0;
+
+            // Porcentajes
+            const porcentajeGeotermica = 32.03 / 100;
+            const porcentajeSolar = 0.00000036 / 100;
+            const porcentajeEolica = 0.00000007 / 100;
+            const porcentajeHidraulica = 67.96 / 100;
+
+            // Cálculos
+            const consumoGeotermica = consumo * porcentajeGeotermica;
+            const consumoSolar = consumo * porcentajeSolar;
+            const consumoEolica = consumo * porcentajeEolica;
+            const consumoHidraulica = consumo * porcentajeHidraulica;
+
+            // Actualización de valores
+            document.getElementById('geotermica').textContent = consumoGeotermica.toFixed(6);
+            document.getElementById('solar').textContent = consumoSolar.toFixed(12);
+            document.getElementById('eolica').textContent = consumoEolica.toFixed(12);
+            document.getElementById('hidraulica').textContent = consumoHidraulica.toFixed(6);
+        }
+    </script>
+  </head>
+  <body>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+ 
+
+  
+
+  
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+      <body>

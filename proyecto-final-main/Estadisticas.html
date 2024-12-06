@@ -1,0 +1,154 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Energía Geotermica</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <img src="geotermica28.jpg" alt="Energía Geotérmica" style="width:70%; max-width:500px; border:4px solid rgb(14, 30, 101);">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Proyecto<br>TalentoTech2</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="Proyecto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyecto</a> 
+    <a href="Estadisticas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Estadisticas</a> 
+    <a href="Grafico1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Producción Energetica</a> 
+    <a href="Grafico2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Capacidad Instalada</a> 
+    <a href="Grafico3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Participación</a>
+    <a href="Riesgosybeneficios.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Riesgos y beneficios</a> 
+    <a href="Proyección.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyección</a>
+    <a href="Calculadora.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Calculadora</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Energia <br> Geotermica</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Estadisticas</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Energía Geotermica en Colombia</b></h1>
+    <hr style="width:50px;border:5px solid rgb(209, 151, 234)" class="w3-round">
+  </div>
+  
+  <img src="geotermica24.jpg" alt="Energía Geotérmica" style="width:70%; max-width:500px; border:2px solid rgb(32, 66, 177);">
+  <img src="geotermica25.jpg" alt="Energía Geotérmica" style="width:70%; max-width:500px; border:2px solid rgb(80, 53, 136);">
+  <img src="geotermica26.jpg" alt="Energía Geotérmica" style="width:70%; max-width:500px; border:2px solid rgb(54, 42, 125);">
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Tabla</b></h1>
+    <hr style="width:50px;border:5px solid rgb(209, 163, 213)" class="w3-round">
+    <style>
+      p {
+          color: rgb(0, 0, 0); /* Cambiar el color del texto a blanco */
+      }
+  </style>
+    <p><b>Conjunto de datos históricos globales sobre energía</p>
+    <p>La energía geotérmica es una fuente de energía renovable clave para Japón debido a su ubicación en el Cinturón de Fuego del Pacífico,
+       lo que le otorga un gran potencial geotérmico. Esta fuente de energía no solo contribuye a la diversificación de la matriz energética del país, sino que también permite reducir la dependencia de los combustibles fósiles y mitigar el impacto ambiental.
+        Japón ha avanzado significativamente en el desarrollo de tecnología geotérmica, especialmente en la generación de electricidad y calefacción. Proyectos innovadores y el apoyo gubernamental han permitido a Japón ser líder en la explotación de este recurso,
+       utilizando tanto su energía para necesidades locales como para contribuir a los objetivos de sostenibilidad global. </b>
+    </p>
+  </div>
+
+  <!-- CDN de DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+  <h1>Datos de Energía Geotérmica en Japón (2000-2020)</h1>
+
+  <table id="data-table">
+      <thead>
+          <tr>
+              <th>Pais</th>
+              <th>Código</th>
+              <th>Año</th>
+              <th>Energía Geotérmica</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr><td>Japan</td><td>JPN</td><td>2000</td><td>533</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2001</td><td>533</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2002</td><td>533</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2003</td><td>535</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2004</td><td>535</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2005</td><td>535</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2006</td><td>532</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2007</td><td>532</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2008</td><td>532</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2009</td><td>535</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2010</td><td>537</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2011</td><td>537</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2012</td><td>512</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2013</td><td>512</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2014</td><td>508</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2015</td><td>516</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2016</td><td>526</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2017</td><td>481</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2018</td><td>482</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2019</td><td>525</td></tr>
+          <tr><td>Japan</td><td>JPN</td><td>2020</td><td>525</td></tr>
+      </tbody>
+  </table>
+
+  <!-- CDN de jQuery (requerido por DataTables) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- CDN de DataTables JS -->
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+  <!-- Inicialización de DataTables -->
+  <script>
+      $(document).ready(function() {
+          $('#data-table').DataTable();
+      });
+  </script>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Descripción</b></h1>
+    <hr style="width:50px;border:5px solid rgb(227, 170, 224)" class="w3-round">
+    <h3> Esta tabla nos muestra la capacidad geotérmica presente en el país de Japón entre los años 2000 y 2020
+    </h3>
+
+  </div>
+
+ 
+</script>
+
+</body>
+</html>
+      <body>
